@@ -1,0 +1,55 @@
+.tooltip-window {
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(0%);              /*  Move HoverWindow horizontally to the left by 100% of its own width. */
+    /* transform: translateY(-10%); */
+    white-space: none;               
+    pointer-events: none;
+    max-width: 100px;     
+    max-height: 150px;        
+    width: 100%;
+    overflow: normal;                   
+    z-index: 9999;                  
+  }
+
+  #hoverwindow{
+    /* width: 350px; */
+  }
+  
+  @media (min-width: 768px) {
+    .tooltip-window {
+      font-size: 14px;                  /* Adjust font size for smaller screens */
+      padding: 8px;
+      transform: translateX(-100%);  
+      white-space: none;
+      overflow: wrap;
+      max-width: 100px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .tooltip-window {
+      font-size: 12px;
+      padding: 6px;
+      transform: translateX(-130%);
+      white-space: none;
+      overflow: wrap;
+      max-width: 80px;
+    }
+  }
+  
+  
+  .more-detail-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  

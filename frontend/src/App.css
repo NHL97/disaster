@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+
+html,body{
+  /* Let height be 'auto' so that DisplayEmergencies page does not overflow. */
+  height : auto;          
+  margin :0;
+}
+
+body {
+  /* height: auto; */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #DDA0DD, #8A2BE2, #4B0082, #6A0DAD);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;      /*Keeps the gradient fixed while scrolling */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+body.modal-open {
+  overflow: hidden; /* Disable scrolling on the body when the modal is open */
+}
+
+.card {
+  transition: all 0.3s ease-in-out;
+}
